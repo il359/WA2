@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.sidebar {
+    width: 150px; /* Reduced width */
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+.sidebar button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    text-align: left;
+    text-decoration: none; /* Remove underline */
+    width: 100%; /* Full width */
+}
+.sidebar button.disabled {
+    background-color: #6c757d; /* Grey color */
+    cursor: not-allowed;
+}
+.sidebar button:hover:not(.disabled) {
+    background-color: #0056b3;
+}
+.main-content {
+    margin-left: 160px; /* Adjusted margin for new sidebar width */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+.timer {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+.question {
+    margin: 20px 0;
+}
+.answer-area {
+    margin-top: 20px;
+}
+.answer-area label {
+    display: block;
+    margin-bottom: 5px;
+}
+.answer-area input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.submit-test-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.submit-test-button:hover {
+    background-color: #218838;
+}
+.feedback {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.feedback.correct {
+    color: #28a745;
+}
+.feedback.incorrect {
+    color: #dc3545;
+}
