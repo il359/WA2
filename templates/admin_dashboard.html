@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dashboard {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .dashboard h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .dashboard p {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+        .dashboard a {
+            display: block;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .dashboard a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome, Admin!</p>
+        <h2>Manage:</h2>
+        <a href="/admin/information">Manage User Profiles</a>
+        <a href="/admin/leaderboard">Manage Leaderboard</a>
+    </div>
+</body>
+</html>
+
+
