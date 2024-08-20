@@ -12,36 +12,46 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: #f0f0f0;
-            overflow-x: hidden;
-            overflow-y: auto;
         }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
+
+        h1 {
+            font-size: 64px;
+            color: #007BFF;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
         }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px; /* Adjusted for larger spacing */
+            width: 60%; /* Increased width for a larger area */
+            max-width: 800px; /* Limit maximum width for larger screens */
+        }
+
         .button {
-            display: block;
-            width: 350px;
-            height: 100px;
-            margin: 15px 0;
-            font-size: 28px;
+            height: 180px; /* Increased height for larger buttons */
+            font-size: 32px; /* Larger text size for the buttons */
             color: #fff;
             background-color: #007BFF;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             cursor: pointer;
             text-align: center;
-            line-height: 100px;
+            line-height: 180px; /* Align text in the center vertically */
             text-decoration: none;
             transition: background-color 0.3s;
         }
+
         .button:hover {
             background-color: #0056b3;
         }
+
         .side-tab-icon {
             position: fixed;
             top: 20px;
@@ -60,33 +70,36 @@
             box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
             transition: background-color 0.3s;
         }
+
         .side-tab-icon:hover {
             background-color: #495057;
         }
+
         .slider-content {
             position: fixed;
             top: 0;
             left: 0;
             width: 0;
-            height: calc(100% - 40px); /* Adjust height dynamically */
+            height: calc(100% - 40px);
             background-color: #343a40;
             color: #fff;
-            padding: 20px 0; /* Add padding to ensure content is fully visible */
+            padding: 20px 0;
             box-shadow: 2px 0 5px rgba(0,0,0,0.3);
             visibility: hidden;
             opacity: 0;
             transition: width 0.3s ease, opacity 0.3s ease;
         }
+
         .slider-content.show {
             width: 250px;
             visibility: visible;
             opacity: 1;
         }
+
         .slider-content a {
             display: block;
-            width: calc(100% - 40px); /* Adjust button width for padding */
             padding: 20px;
-            margin: 10px auto; /* Center buttons horizontally */
+            margin: 10px;
             font-size: 20px;
             color: #fff;
             background-color: #007BFF;
@@ -97,14 +110,17 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
+
         .slider-content a:hover {
             background-color: #0056b3;
         }
-
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <h1>H2 Math Quiz</h1>
+
+    <div class="button-container">
         <a href="/20" class="button">20:00</a>
         <a href="/30" class="button">30:00</a>
         <a href="/40" class="button">40:00</a>
