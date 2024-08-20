@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>40:00 Test</title>
+    <title>30:00 Test</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -13,7 +13,7 @@
 
     <div class="main-content">
         <div class="timer" id="timer">
-            Time remaining: <span id="time">40:00</span>
+            Time remaining: <span id="time">30:00</span>
         </div>
         <div id="question-container">
             <!-- Questions will be loaded here -->
@@ -324,9 +324,9 @@
 
 
         window.onload = function () {
-            var fourtyMinutes = 60 * 40,
+            var thirtyMinutes = 60 * 30,
                 display = document.querySelector('#time');
-            startTimer(fourtyMinutes, display);
+            startTimer(thirtyMinutes, display);
 
             // Load random questions
             var questions = getRandomQuestions();
@@ -448,7 +448,7 @@
 
             // Calculate time elapsed in seconds
             var timeElapsed = Math.floor((endTime - startTime) / 1000); // Seconds elapsed
-            var timeLimit = 40 * 60; 
+            var timeLimit = 30 * 60; 
             var timeRemaining = Math.max(0, timeLimit - timeElapsed); // Time remaining
 
             // Calculate the score multiplier based on time remaining
@@ -459,7 +459,7 @@
             finalScore = Math.round(finalScore); // Round to nearest integer
 
             // Send the final score and test type to the server
-            var testType = '40:00'; 
+            var testType = '30:00'; 
             window.location.href = `/test_finished?score=${finalScore}&testType=${testType}`;
         }
     </script>
