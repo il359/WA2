@@ -11,15 +11,16 @@ Firstly, I set up the basic structure of Flask, HTML, and CSS. Following that, I
 
 
 # Challenges encountered
-While there were many challenges encountered along the way, the biggest challenge I encountered was learning how to set-up a databse as well as how to retrieve information from the said database. 
+While there were many challenges encountered along the way, the biggest challenge I faced was learning how to set up a database as well as how to retrieve information from the said database. As we were only recently taught databases by Mr Lam, I did not know how to do much other than query the database. And even then, I only knew how to do that on programs such as DB browser but not on Python. Thus, it took me a long time to connect my project with a database and even longer to learn how to properly utilize the database in Python. Thus, I had to do a lot of research on my own regarding this topic which took a lot of time and effort. Even after the database was functioning, it was extremely difficult for me to fetch and display the information on my website which made it so I had to spend a lot of time debugging. With databases, since there are so many factors in play, it was very difficult to pinpoint the mistakes making it so debugging took an extremely long time and made up for the bulk of the duration I took working on the project. Eventually, though, I was able to get it working after watching different YouTube videos as well as using Google and asking AI for help.
 
 
 
 # Accomplishments which I'm proud of
-
+This web app is the biggest web app I have ever made be it with or without assistance, with it comes many different new experiences and new things that I had to do to make the web app what it is today. Some examples to showcase this could be connecting the web app to a database, making a functioning register and login system, making the questions to answers to the math questions dynamic, imposing a time constraint, making a leaderboard, and making an admin portal. All of these tasks are monumental to me as they were things I had never done before and I believe that doing all these things actively helped improve my skills in computing. If I had to explain why I am proud of these accomplishments, it would be because I am naturally not very experimental so I often stick to the same things again and again. While that may hold certain benefits, it usually means that I never try anything new. That is why just doing a new task and going out of my comfort zone is enough for me to be proud of myself no matter how big or small these accomplishments are.
 
 
 # What I learned
 
 
 # What's next for the H2 Math portal
+Honestly, I believe that the H2 Math portal is almost completed. However, there are still a few minor features missing that I would like to add. First and foremost, I would like to implement a special keyboard that would allow users to simply press special characters like the fractions, square root, and pi buttons, rather than having to spell out all of the answers. In this sense, it would greatly improve the user interface and make things more convenient for people in general. Next, I want to loosen the format requirements for answering the questions so that it doesn't matter if you use decimals or fractions, and it also doesn't matter what order you write your answers.
