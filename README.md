@@ -20,7 +20,7 @@ This web app is the biggest web app I have ever made be it with or without assis
 
 
 # What I learned
-
+The process of creating this web application taught me a lot of things. These include executing some javascript, connecting to a database, and executing SQL code in Python. And those are just a handful. Developing this online application also improved my proficiency and comprehension of HTML, Javascript, and Python. 
 
 # What's next for the H2 Math portal
 Honestly, I believe that the H2 Math portal is almost completed. However, there are still a few minor features missing that I would like to add. First and foremost, I would like to implement a special keyboard that would allow users to simply press special characters like the fractions, square root, and pi buttons, rather than having to spell out all of the answers. In this sense, it would greatly improve the user interface and make things more convenient for people in general. Next, I want to loosen the format requirements for answering the questions so that it doesn't matter if you use decimals or fractions, and it also doesn't matter what order you write your answers.
